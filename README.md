@@ -1,4 +1,6 @@
-# SmartRecipes🍳🧑‍🍳🌶️🥨🧀
+# SmartRecipes
+# 🍳🧑‍🍳🌶️
+
 👋Hi, we are [Blake Whitman](https://blake-whitman.github.io/) and [Junbo Chen](https://www.linkedin.com/in/thebo8800/), the creators of SmartRecipes!👋
 
 ## Inspiration
