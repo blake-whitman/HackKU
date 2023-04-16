@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="body">
+    <div class="logo-container">
+        <img src="/static/images/Logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="sidebar">
+        <a href="/home">Home</a>
+        <a href="/liked">Favorites</a>
+        <a href="/team">Meet the Team</a>
+        <a href="/feedback">Feedback</a>
+        <a onclick="logout()">Logout</a>
+        <a onclick="toggleDarkMode()"><i class="fas fa-moon fa-2x"></i></a>
+
+
+    </div>
+
+    <div class="content">
+        <h1 class="h1">Meet the Team</h1>
+        <ul>
+            <li class="team_names">Blake Whitman</li>
+            <img src="/static/images/Blake.png" alt="Blake's picture" class="team_pics">
+            <li class="team_names">Junbo Chen</li>
+            <img src="/static/images/Junbo.png" alt="Junbo's picture" class="team_pics">
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback about Smart Recipes? Contact us at info@smartrecipes.com</p>
+
+        <form>
+            <button type="button" name='Read' onclick="readWebpage()">Read Webpage</button>
+        </form>
+    </div>
+</div>
+<script>
+    hideLogoWhenScrolled(".logo-container");
+</script>
+
+{% endblock %}
