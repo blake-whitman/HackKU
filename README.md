@@ -27,9 +27,8 @@ Database creation and persistence was a difficult problem for us to address, as 
 Overall, we were challenged to learn nearly an entire new tech stack this weekend. With that came its share of frustrations, but at the same time made achieving our project's goals all the more rewarding.
 
 # What we Learned
-Dream big, but be realistic: We started off with full-fledged ideas for an AI image classification model that could tell what food a user was entering based only on an image scan. As exciting as that was to imagine, the idea could have been a hackathon project in its own right. We had to scale down for the sake of time constraints, but the initial brainstorming was necessary to get to where we ended up!
+_Dream big, but be realistic_: We started off with full-fledged ideas for an AI image classification model that could tell what food a user was entering based only on an image scan. As exciting as that was to imagine, the idea could have been a hackathon project in its own right. We had to scale down for the sake of time constraints, but the initial brainstorming was necessary to get to where we ended up!
 
-Rest breeds productivity: At 2AM each night, if you walked into our workspace, you would have found us fast asleep. Whenever we got too tired at night, our productivity was struck and it just didn't make sense to stay up spending hours on something that a well rested mind could do in 30 minutes.
 
 # What's Next for SmartRecipes
 We hope to continue work on SmartRecipes both now and into the future. Some possible avenues for improvement include implementing more social media compatibility components (Instagram, Tik Tok), adding specific quantities for ingredients, and building out the AI image classification model that we alluded to in the retrospective section. We both genuinely enjoy cooking and it is our sincere hope that we can spread that enjoyment to users any way we can.
