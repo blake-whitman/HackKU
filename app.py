@@ -119,13 +119,6 @@ def text():
     db.update_doc(User().username())
     return jsonify([ingredient])
 
-@app.route('/generate-puzzle', methods=['GET', 'POST'])
-@login_required
-def generate_puzzle():
-    curr_items = request.json.get('currItems', [])
-    puzzle = WS.create_word_search(curr_items)
-    response_data = {"puzzle": puzzle}
-    return json.dumps(response_data)
 
 @app.route('/removeItems', methods=['POST'])
 @login_required
