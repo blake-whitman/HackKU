@@ -1,5 +1,6 @@
 # SmartRecipes
 
+![image](https://user-images.githubusercontent.com/72525324/232273931-3347f113-aabe-48cd-b290-54e94e6ebc02.png)
 Hi, we are [Blake Whitman](https://blake-whitman.github.io/) and [Junbo Chen](https://www.linkedin.com/in/thebo8800/), the creators of SmartRecipes!
 
 ## Inspiration
