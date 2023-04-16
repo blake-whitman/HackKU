@@ -43,6 +43,7 @@ label {
   margin: 10px 0;
 }
 
+
 button[type="submit"],
 button[type="button"],
 #imageInput,
@@ -137,9 +138,11 @@ button[type="button"]:hover {
 .image-carousel {
   position: relative;
   height: 400px;
-  width: 666px;
+  width: 600px;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 20px auto;
+  display: block;
+  border: 6px solid;
 }
 
 .image-carousel img {
@@ -346,7 +349,7 @@ ul {
 
 /*Dark mode*/
 body.dark-mode {
-  background-color: black;
+  background-color: rgb(35, 36, 37);
   color: white;
 }
 
@@ -361,7 +364,7 @@ body.dark-mode h2 {
 
 /* Style the main image in dark mode */
 body.dark-mode img {
-  filter: brightness(50%);
+  filter: brightness(70%);
 }
 
 /* Styles for the text description in dark mode */
@@ -390,7 +393,7 @@ body.dark-mode button[type="button"]:hover {
 
 /* Styles for the sidebar in dark mode */
 body.dark-mode .sidebar {
-  background-color: grey;
+  background-color: black;
   color: white;
 }
 

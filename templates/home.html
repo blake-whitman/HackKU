@@ -16,7 +16,7 @@
         <a onclick="logout()">Logout</a>
         <a onclick="toggleDarkMode()"><i class="fas fa-moon fa-2x"></i></a>
     </div>
-    <h1 class="h1">Smart Recipes</h1>
+    <h1 class="h1">SmartRecipes</h1>
     <div class="image-carousel">
         <img src="/static/images/Cooking.jpg" alt="Cooking Pan" class="active img">
         <img src="/static/images/Variety_Food.jfif" alt="Variety of food" class="img">
@@ -25,47 +25,8 @@
         <img src="/static/images/img2.jpg" alt="Stir Fry" class="img">
         <img src="/static/images/img4.jpg" alt="Steak" class="img">
     </div>
-    <p>Welcome to Smart Recipes, a website where users can enter different types of ingredients
-        to figure all the different dishes that can be made with the ingredients.</p>
-    <form method="post">
-        <button type="submit" name='Speak' onclick="sendToSpeech()">Start saying ingredients</button>
-    </form>
-    <form class="form">
-        <input type="file" id="imageInput" accept="image/*">
-        <button type="button" name='Scan' onclick="sendImageToBarcodeScanner()">Scan Barcode</button>
-    </form>
-
-
-    <!--<form class="form">
-            <input type="file" id="imageInputAI" accept="image/*">
-            <button type="button" name = 'runAI' onclick="sendImageToAI()">Run AI model</button>
-        </form>
-        -->
-
-    <form class="form">
-        <button type="button" name='Read' onclick="readWebpage()">Read Webpage</button>
-    </form>
-
-
-    <!-- <form class="form">
-            <button type="button" name = 'pic' onclick="takePicture()">Take Picture</button>
-        </form>
-        
-        -->
-
-    <form onsubmit="clearAllFields()" class="form">
-        <form class="form">
-            <label for="text-box">Enter ingredients:</label>
-            <input type="text" id="text-box" onkeydown="handleEnterKeyDown(event)">
-        </form>
-    </form class="form">
-
-    <button type="button" name='clear' onclick="selectAll()">Select or Deselect All</button>
-    <button type="button" name='clear' onclick="remove()">Remove Selected Ingredients</button>
-    <button type="button" name='Search' onclick="search()">Find Recipes</button>
-
-    <h2>Current Items:</h2>
-
+    <p>Introducing SmartRecipes: a web application that generates recipe ideas based on the ingredients you have on hand. Type, speak, or upload a file below to get started, and say goodbye to wasted groceries and hello to a more efficient cooking experience!</p>
+    <h2>Ingredients:</h2>
     <div class="container ingredients" id="ingredients">
         {% for ingredient in session['ingredients'] %}
         <div class="form-check" id="{{ ingredient }}">
@@ -77,6 +38,32 @@
         </div>
         {% endfor %}
     </div>
+    <button type="button" name='clear' onclick="selectAll()">Select or Deselect All</button>
+    <button type="button" name='clear' onclick="remove()">Remove Selected Ingredients</button>
+    <button type="button" name='Search' onclick="search()" style="background-color: green; color: white;">Find
+        Recipes</button>
+    <hr style=" width: 100%; border: 2.5px solid;">
+    <form onsubmit="clearAllFields()" class="form">
+        <form class="form" style="display: flex; flex-direction: row; align-items: center;">
+            <label for="text-box" style="margin-right: 10px;">Enter ingredients:</label>
+            <input type="text" id="text-box" placeholder="e.g. tomatoes" onkeydown="handleEnterKeyDown(event)"
+                style="border-radius: 5px; border: 1px solid;">
+        </form>
+    </form class="form">
+
+    <form class="form">
+        <input type="file" id="imageInput" accept="image/*">
+        <button type="button" name='Scan' onclick="sendImageToBarcodeScanner()">Scan Barcode</button>
+    </form>
+
+    <form class="form" style="display: inline-block;">
+        <button type="submit" name='Speak' onclick="sendToSpeech()">Start saying ingredients</button>
+    </form>
+
+    <form class="form" style="display: inline-block;">
+        <button type="button" name='Read' onclick="readWebpage()">Read Webpage</button>
+    </form>
 
 </div>
+
 {% endblock %}
