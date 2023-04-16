@@ -1,14 +1,13 @@
 import speech_recognition as sr
 
 def speech_to_text():
-    # initialize recognizer class (for recognizing the speech)
+    # initialize recognizer class
     r = sr.Recognizer()
 
     ingredients = []
     cont = True
     while cont:
         # Reading Microphone as source
-        # listening the speech and store in audio_text variable
         with sr.Microphone() as source:
             print("Say an ingredient you have or say 'done' when finished:")
             audio_text = r.listen(source)
@@ -22,5 +21,5 @@ def speech_to_text():
             ingredients.append(ingredient)
             print(f"Ingredient Added: {ingredient}")
         except:
-            print("Sorry, I did not get that")
+            print("Sorry, I did not catch that. Please try again or say 'done'")
     return ingredients

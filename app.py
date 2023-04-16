@@ -127,12 +127,6 @@ def generate_puzzle():
     response_data = {"puzzle": puzzle}
     return json.dumps(response_data)
 
-@app.route('/savePicture', methods=['GET', 'POST'])
-@login_required
-def savePicture():
-    Camera.takePic()
-    return ""
-
 @app.route('/removeItems', methods=['POST'])
 @login_required
 def removeItems():
