@@ -1,7 +1,5 @@
 # SmartRecipes
-
-![image](https://user-images.githubusercontent.com/72525324/232273931-3347f113-aabe-48cd-b290-54e94e6ebc02.png)
-Hi, we are [Blake Whitman](https://blake-whitman.github.io/) and [Junbo Chen](https://www.linkedin.com/in/thebo8800/), the creators of SmartRecipes!
+👋Hi, we are [Blake Whitman](https://blake-whitman.github.io/) and [Junbo Chen](https://www.linkedin.com/in/thebo8800/), the creators of SmartRecipes!👋
 
 ## Inspiration
 Imagine you are coming home after a long day of classes, work, or both. You want nothing more than to rest and enjoy the remaining moments of the day–cooking, however, poses a threat to that downtime. Our inspiration stems from this nightly occurrence. Instead of abandoning cooking altogether for more expensive or unhealthy options, we propose a way to make cooking simpler, more efficient, and more fun. At the same time, SmartRecipes helps ensure users get the most out of their ingredients, leading to reduced food waste.
